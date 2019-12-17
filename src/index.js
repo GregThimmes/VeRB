@@ -17,7 +17,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
-import { Router, Route, Switch } from "react-router";
+import { HashRouter, Router, Route, Switch } from "react-router-dom";
+
 
 import "assets/scss/material-kit-pro-react.scss?v=1.8.0";
 
@@ -42,7 +43,7 @@ import ErrorPage from "views/ErrorPage/ErrorPage.js";
 var hist = createBrowserHistory();
 
 ReactDOM.render(
-  <Router history={hist}>
+  <HashRouter basename='/'>
     <Switch>
       <Route path="/about-us" component={AboutUsPage} />
       <Route path="/blog-post" component={BlogPostPage} />
@@ -61,6 +62,6 @@ ReactDOM.render(
       <Route path="/error-page" component={ErrorPage} />
       <Route path="/" component={PresentationPage} />
     </Switch>
-  </Router>,
+  </HashRouter>,
   document.getElementById("root")
 );
