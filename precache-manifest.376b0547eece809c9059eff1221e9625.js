@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6aac0d3ef08909ee846014cb867bbe57",
+    "revision": "31b548e29d57d0b259f7c6a8910e3efb",
     "url": "/VeRB/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/VeRB/static/css/2.5bc09813.chunk.css"
   },
   {
-    "revision": "5890b7f220f80741cf30",
+    "revision": "1201e0ab3faa5fefc338",
     "url": "/VeRB/static/css/main.be1a6cb7.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/VeRB/static/js/2.af374de4.chunk.js"
   },
   {
-    "revision": "5890b7f220f80741cf30",
-    "url": "/VeRB/static/js/main.901efac8.chunk.js"
+    "revision": "1201e0ab3faa5fefc338",
+    "url": "/VeRB/static/js/main.e77bc9ef.chunk.js"
   },
   {
     "revision": "af0728569060386fcb63",
