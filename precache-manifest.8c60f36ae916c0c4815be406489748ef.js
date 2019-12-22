@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "31b548e29d57d0b259f7c6a8910e3efb",
+    "revision": "9d0c869ba2b610f660a13e28b7d7fc42",
     "url": "/VeRB/index.html"
   },
   {
-    "revision": "df7d83cfddb18d47e875",
+    "revision": "216f0bfdc3228a652fb2",
     "url": "/VeRB/static/css/2.5bc09813.chunk.css"
   },
   {
-    "revision": "1201e0ab3faa5fefc338",
+    "revision": "e208bf0cb4a23af44ea9",
     "url": "/VeRB/static/css/main.be1a6cb7.chunk.css"
   },
   {
-    "revision": "df7d83cfddb18d47e875",
-    "url": "/VeRB/static/js/2.af374de4.chunk.js"
+    "revision": "216f0bfdc3228a652fb2",
+    "url": "/VeRB/static/js/2.4b02f79a.chunk.js"
   },
   {
-    "revision": "1201e0ab3faa5fefc338",
-    "url": "/VeRB/static/js/main.e77bc9ef.chunk.js"
+    "revision": "e208bf0cb4a23af44ea9",
+    "url": "/VeRB/static/js/main.f529c77a.chunk.js"
   },
   {
     "revision": "af0728569060386fcb63",
@@ -492,24 +492,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/VeRB/static/media/product1.081bf019.jpg"
   },
   {
-    "revision": "629c78835c87e735399ea4675ae05545",
-    "url": "/VeRB/static/media/product1.629c7883.jpg"
-  },
-  {
-    "revision": "77917eb42776040976feb5220368c4d9",
-    "url": "/VeRB/static/media/product2.77917eb4.jpg"
-  },
-  {
-    "revision": "17b8d773da68f74da49d32f40de47750",
-    "url": "/VeRB/static/media/product3.17b8d773.jpg"
-  },
-  {
     "revision": "a0e400118b382fc007111de984da7552",
     "url": "/VeRB/static/media/product3.a0e40011.jpg"
-  },
-  {
-    "revision": "aeca866202eaac06e5934625546b3605",
-    "url": "/VeRB/static/media/product4.aeca8662.jpg"
   },
   {
     "revision": "62c352e575b85335d01ddd0012d43b35",
