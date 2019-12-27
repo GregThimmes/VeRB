@@ -1,23 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "40acc72d139c9ce1c90d976d714603b7",
+    "revision": "6602d34cd2e4977981c323c79697b039",
     "url": "/VeRB/index.html"
   },
   {
-    "revision": "22a1c37a4593d6c8a766",
-    "url": "/VeRB/static/css/2.5bc09813.chunk.css"
-  },
-  {
-    "revision": "0ddaba608fc8eef314c4",
+    "revision": "7f5bf8669f747c66f26f",
     "url": "/VeRB/static/css/main.be1a6cb7.chunk.css"
   },
   {
-    "revision": "22a1c37a4593d6c8a766",
-    "url": "/VeRB/static/js/2.77923663.chunk.js"
+    "revision": "7bdbf43290ca6ae91188",
+    "url": "/VeRB/static/js/2.31a96ab5.chunk.js"
   },
   {
-    "revision": "0ddaba608fc8eef314c4",
-    "url": "/VeRB/static/js/main.7a20a975.chunk.js"
+    "revision": "7f5bf8669f747c66f26f",
+    "url": "/VeRB/static/js/main.f639830c.chunk.js"
   },
   {
     "revision": "af0728569060386fcb63",
@@ -30,22 +26,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a185654bff5c2792ce3fc2499af506d4",
     "url": "/VeRB/static/media/avengerstoy.a185654b.jpg"
-  },
-  {
-    "revision": "a6bc001356ce226f8c980086f049148c",
-    "url": "/VeRB/static/media/b_1.a6bc0013.jpg"
-  },
-  {
-    "revision": "00a858d9d1f69cda73d482af2da364be",
-    "url": "/VeRB/static/media/b_2.00a858d9.jpg"
-  },
-  {
-    "revision": "bfc47626afb8e57451f1a7628896d0e1",
-    "url": "/VeRB/static/media/b_3.bfc47626.jpg"
-  },
-  {
-    "revision": "f8c6281a4b5b9edd96bb498c6975d187",
-    "url": "/VeRB/static/media/b_4.f8c6281a.jpg"
   },
   {
     "revision": "50f15a1c62e8f493400f0882130f40f3",
@@ -90,10 +70,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "013b04881a6177ff0648349533ef0447",
     "url": "/VeRB/static/media/bg7.013b0488.jpg"
-  },
-  {
-    "revision": "8cfdd67a8ad34bc88343e1889d7b7255",
-    "url": "/VeRB/static/media/bg8.8cfdd67a.jpg"
   },
   {
     "revision": "7d2facc52e51e6dd0969bd739e767ccb",
@@ -224,10 +200,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/VeRB/static/media/card-project6.cdb05aa3.jpg"
   },
   {
-    "revision": "c1ff9b42572047f0d644e4a140216834",
-    "url": "/VeRB/static/media/cards-test.c1ff9b42.png"
-  },
-  {
     "revision": "b23f720528371939315c0df5fc90c150",
     "url": "/VeRB/static/media/christian.b23f7205.jpg"
   },
@@ -258,14 +230,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e60a3b90456d6ae500f7805e7899a3bb",
     "url": "/VeRB/static/media/color3.e60a3b90.jpg"
-  },
-  {
-    "revision": "c913d1fb19a07a5ddf96413659f44243",
-    "url": "/VeRB/static/media/coloured-card-with-btn.c913d1fb.jpg"
-  },
-  {
-    "revision": "6e16591123c3532f0bf3cc08b5d4aaf3",
-    "url": "/VeRB/static/media/coloured-card.6e165911.jpg"
   },
   {
     "revision": "3a7ae9b9f8081f8474277f79b818a7b0",
@@ -304,104 +268,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/VeRB/static/media/ecommerce-header.7cdeae31.jpg"
   },
   {
-    "revision": "3dc38cad3307587df9dfd9d43ba478bd",
-    "url": "/VeRB/static/media/ex-about-us.3dc38cad.jpg"
-  },
-  {
-    "revision": "5d02ac3d45fc9b68eeb9a75d80f107ac",
-    "url": "/VeRB/static/media/ex-blog-post.5d02ac3d.jpg"
-  },
-  {
-    "revision": "e1e34a0cbac21cfc375518160bf15ec7",
-    "url": "/VeRB/static/media/ex-blog-posts.e1e34a0c.jpg"
-  },
-  {
-    "revision": "de31d6a32f5f9febcc09eb79e45b9b36",
-    "url": "/VeRB/static/media/ex-contact.de31d6a3.jpg"
-  },
-  {
-    "revision": "dd36f8de9eb35d7cebf9224501d27a9c",
-    "url": "/VeRB/static/media/ex-landing.dd36f8de.jpg"
-  },
-  {
-    "revision": "730b7e674d57efe536e579427d28834b",
-    "url": "/VeRB/static/media/ex-login.730b7e67.jpg"
-  },
-  {
-    "revision": "b4411275408c1f2638bbb72f741b4858",
-    "url": "/VeRB/static/media/ex-pricing.b4411275.jpg"
-  },
-  {
-    "revision": "59760782db161c5a2ddba82ea788b217",
-    "url": "/VeRB/static/media/ex-product.59760782.jpg"
-  },
-  {
-    "revision": "87c911d2618732af7ed81a82b0b79038",
-    "url": "/VeRB/static/media/ex-profile.87c911d2.jpg"
-  },
-  {
-    "revision": "e3d92195765cc16959fc6ba4bdf1d21b",
-    "url": "/VeRB/static/media/ex-register.e3d92195.jpg"
-  },
-  {
-    "revision": "815228226b4585986e8acc06fa258ce9",
-    "url": "/VeRB/static/media/f_1.81522822.jpg"
-  },
-  {
-    "revision": "e6a0ba4060052422254befd76e877195",
-    "url": "/VeRB/static/media/f_2.e6a0ba40.jpg"
-  },
-  {
-    "revision": "5b9e9b6cc1f3756b3e281207f392cf05",
-    "url": "/VeRB/static/media/f_3.5b9e9b6c.jpg"
-  },
-  {
-    "revision": "e871689254f8dbbdc7188282ba987fd8",
-    "url": "/VeRB/static/media/f_4.e8716892.jpg"
-  },
-  {
-    "revision": "ebe3a5727e042ae2860369a2f4d658c1",
-    "url": "/VeRB/static/media/f_5.ebe3a572.jpg"
-  },
-  {
-    "revision": "d639f4d6b8274d933d0dc579183585a7",
-    "url": "/VeRB/static/media/features-5.d639f4d6.jpg"
-  },
-  {
     "revision": "d0cbed6f760665d133b34da53ad17a79",
     "url": "/VeRB/static/media/gucci.d0cbed6f.jpg"
   },
   {
-    "revision": "f3c73c62bff03db2a2e2c7ca3a8d3bbf",
-    "url": "/VeRB/static/media/h_1.f3c73c62.jpg"
-  },
-  {
-    "revision": "2e00f5fa3c84e9feadd41edae1978490",
-    "url": "/VeRB/static/media/h_2.2e00f5fa.jpg"
-  },
-  {
-    "revision": "b1283b6a3653ae9cda9614d299b39836",
-    "url": "/VeRB/static/media/h_3.b1283b6a.jpg"
-  },
-  {
-    "revision": "1b89a37a6ab3f625e4a23b8a704139e1",
-    "url": "/VeRB/static/media/h_4.1b89a37a.jpg"
-  },
-  {
-    "revision": "a2cbde287adb797a94b29b7473e9ca88",
-    "url": "/VeRB/static/media/harvard.a2cbde28.jpg"
-  },
-  {
     "revision": "ebe9884b2152a08a525fcd5054019532",
     "url": "/VeRB/static/media/image_placeholder.ebe9884b.jpg"
-  },
-  {
-    "revision": "bcdf9b4f83a2a3b37c898f4578ae86fd",
-    "url": "/VeRB/static/media/ipad-comments.bcdf9b4f.jpg"
-  },
-  {
-    "revision": "bab28e744db01ccf9576dc0024f0e276",
-    "url": "/VeRB/static/media/ipad-table.bab28e74.jpg"
   },
   {
     "revision": "ba7def669f3bda8ab0ec3774f8c3644d",
@@ -416,24 +288,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/VeRB/static/media/kendall.5a0e395b.jpg"
   },
   {
-    "revision": "e342eac6d52bff6863a1763f2a07973c",
-    "url": "/VeRB/static/media/laptop-basics.e342eac6.png"
-  },
-  {
-    "revision": "8adb0497511125bf9345d249b571cd11",
-    "url": "/VeRB/static/media/m_1.8adb0497.jpg"
-  },
-  {
-    "revision": "3292e82a084ac202c7cffbc9096c3d4f",
-    "url": "/VeRB/static/media/m_2.3292e82a.jpg"
-  },
-  {
     "revision": "101b9dc3484755250ff3de71d22af8e1",
     "url": "/VeRB/static/media/marc.101b9dc3.jpg"
-  },
-  {
-    "revision": "98a41061e845e5348f0a0fcb3811df32",
-    "url": "/VeRB/static/media/microsoft.98a41061.jpg"
   },
   {
     "revision": "e558e7a56fa53cc3a9ccfa35d10507d0",
@@ -464,48 +320,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/VeRB/static/media/office5.99ffc11c.jpg"
   },
   {
-    "revision": "75b26d50419816532cc70716f34b8fed",
-    "url": "/VeRB/static/media/p_1.75b26d50.jpg"
-  },
-  {
-    "revision": "30721a4c241547e71c882c1b42d7552c",
-    "url": "/VeRB/static/media/p_2.30721a4c.jpg"
-  },
-  {
-    "revision": "2d600eb77aeb1d90a46fc7c6561c991f",
-    "url": "/VeRB/static/media/p_3.2d600eb7.jpg"
-  },
-  {
-    "revision": "8f4fb4258a08a51d2573f6b354045cce",
-    "url": "/VeRB/static/media/p_4.8f4fb425.jpg"
-  },
-  {
-    "revision": "4b442eec60800893647846d0b1afb639",
-    "url": "/VeRB/static/media/p_5.4b442eec.jpg"
-  },
-  {
     "revision": "1eb7fff2a469da3cc6c3311572d7696d",
     "url": "/VeRB/static/media/placeholder.1eb7fff2.jpg"
-  },
-  {
-    "revision": "65615a830dc6d58d24845b0cc0c63632",
-    "url": "/VeRB/static/media/presentation-ipad.65615a83.jpg"
-  },
-  {
-    "revision": "1ac51840399bb423c95207049afbf401",
-    "url": "/VeRB/static/media/pro_1.1ac51840.jpg"
-  },
-  {
-    "revision": "62636a31fd88076aaefed599163d5a35",
-    "url": "/VeRB/static/media/pro_2.62636a31.jpg"
-  },
-  {
-    "revision": "93bea67ef4bf189d7f879e3c0ca78f21",
-    "url": "/VeRB/static/media/pro_3.93bea67e.jpg"
-  },
-  {
-    "revision": "841eb58350f9f3d6f2871d8dbd7a2a5c",
-    "url": "/VeRB/static/media/pro_4.841eb583.jpg"
   },
   {
     "revision": "081bf019322fc100b3b84f34d9bff302",
@@ -536,14 +352,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/VeRB/static/media/rampage.62c352e5.jpg"
   },
   {
-    "revision": "282010eceed1c8d5d9a5e4c7113d7097",
-    "url": "/VeRB/static/media/social-row.282010ec.jpg"
-  },
-  {
-    "revision": "0bfa932ba1f82a8c6f5a27119f698ce1",
-    "url": "/VeRB/static/media/stanford.0bfa932b.jpg"
-  },
-  {
     "revision": "48d00d5f5fd925c6975d144cd864ad4f",
     "url": "/VeRB/static/media/street-fighter.48d00d5f.png"
   },
@@ -572,47 +380,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/VeRB/static/media/suit-6.ba2bff5e.jpg"
   },
   {
-    "revision": "4c3bf97ee872e615172b8456dbe77156",
-    "url": "/VeRB/static/media/t_1.4c3bf97e.jpg"
-  },
-  {
-    "revision": "e3b4753c9b4b7f7d683af20005aef11e",
-    "url": "/VeRB/static/media/t_2.e3b4753c.jpg"
-  },
-  {
-    "revision": "16669904008264492057975e485f8804",
-    "url": "/VeRB/static/media/t_3.16669904.jpg"
-  },
-  {
-    "revision": "777ec84b808a8f2224ea80f29f1a8dc3",
-    "url": "/VeRB/static/media/table.777ec84b.jpg"
-  },
-  {
-    "revision": "ce3e360ce279504679b94cb3b68f4ddd",
-    "url": "/VeRB/static/media/team_1.ce3e360c.jpg"
-  },
-  {
-    "revision": "11ada9f5f62ab009bd56f6bdfcc7b3a0",
-    "url": "/VeRB/static/media/team_2.11ada9f5.jpg"
-  },
-  {
-    "revision": "7892df8808acd5de7b525e7bc51c0090",
-    "url": "/VeRB/static/media/team_3.7892df88.jpg"
-  },
-  {
-    "revision": "4756a724ec39368fc55a969fa98ac267",
-    "url": "/VeRB/static/media/team_4.4756a724.jpg"
-  },
-  {
-    "revision": "1ceffda48a4cc57333d447b6b5d51fc2",
-    "url": "/VeRB/static/media/team_5.1ceffda4.jpg"
-  },
-  {
     "revision": "404803b08a2efaf71ee301987391765d",
     "url": "/VeRB/static/media/tom-ford.404803b0.jpg"
-  },
-  {
-    "revision": "d5aeae4f579a79386b6d132154d02032",
-    "url": "/VeRB/static/media/vodafone.d5aeae4f.jpg"
   }
 ]);
