@@ -71,29 +71,21 @@ export default function ProductPage() {
   return (
     <div className={classes.productPage}>
       <Header
-        brand="Material Kit PRO React"
-        links={<HeaderLinks dropdownHoverColor="rose" />}
+        brand="VeRB"
+        links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"
         changeColorOnScroll={{
           height: 100,
-          color: "rose"
+          color: "info"
         }}
       />
       <Parallax
         image={require("assets/img/bg6.jpg")}
-        filter="rose"
+        filter="info"
         className={classes.pageHeader}
       >
-        <div className={classes.container}>
-          <GridContainer className={classes.titleRow}>
-            <GridItem md={4} className={classes.mlAuto}>
-              <Button color="white" className={classes.floatRight}>
-                <ShoppingCart /> 0 items
-              </Button>
-            </GridItem>
-          </GridContainer>
-        </div>
+
       </Parallax>
       <div className={classNames(classes.section, classes.sectionGray)}>
         <div className={classes.container}>
@@ -112,7 +104,7 @@ export default function ProductPage() {
                 <h3 className={classes.mainPrice}>$335</h3>
                 <Accordion
                   active={0}
-                  activeColor="rose"
+                  activeColor="info"
                   collapses={[
                     {
                       title: "Description",
@@ -261,7 +253,7 @@ export default function ProductPage() {
                   </GridItem>
                 </GridContainer>
                 <GridContainer className={classes.pullRight}>
-                  <Button round color="rose">
+                  <Button round color="info">
                     Add to Cart &nbsp; <ShoppingCart />
                   </Button>
                 </GridContainer>
@@ -293,7 +285,7 @@ export default function ProductPage() {
                   title="Popular Item"
                   description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
                   icon={Favorite}
-                  iconColor="rose"
+                  iconColor="info"
                   vertical
                 />
               </GridItem>
@@ -337,7 +329,7 @@ export default function ProductPage() {
                         placement="top"
                         classes={{ tooltip: classes.tooltip }}
                       >
-                        <Button justIcon color="rose" simple>
+                        <Button justIcon color="info" simple>
                           <Favorite />
                         </Button>
                       </Tooltip>
@@ -407,7 +399,7 @@ export default function ProductPage() {
                         placement="top"
                         classes={{ tooltip: classes.tooltip }}
                       >
-                        <Button justIcon color="rose" simple>
+                        <Button justIcon color="info" simple>
                           <Favorite />
                         </Button>
                       </Tooltip>

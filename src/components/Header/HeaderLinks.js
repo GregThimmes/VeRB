@@ -39,10 +39,6 @@ import LineStyle from "@material-ui/icons/LineStyle";
 import Error from "@material-ui/icons/Error";
 import PermIdentity from "@material-ui/icons/PermIdentity";
 import Search from "@material-ui/icons/Search";
-
-
-
-
 // core components
 import CustomInput from "components/CustomInput/CustomInput.js";
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
@@ -143,13 +139,19 @@ export default function HeaderLinks(props) {
                 </div>
                 <ListItem className={classes.listItem}>
                   <Button
-                    href="profile/2"
+                    href="/VeRB/#/profile/2"
                     className={classes.navLink}
                     color="transparent"
                   >
                     <AccountCircle /> My Profile
                   </Button>
                 </ListItem>
+                <ListItem className={classes.listItem}>
+                <Button color="white" className={classes.floatRight}>
+                  <ShoppingCart /> 0 items
+                </Button>
+                </ListItem>
+
               </div>
     
   );

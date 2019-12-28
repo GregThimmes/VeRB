@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import React from "react";
+import React, { useState } from 'react';
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -13,14 +13,10 @@ import Palette from "@material-ui/icons/Palette";
 import People from "@material-ui/icons/People";
 import Add from "@material-ui/icons/Add";
 import Favorite from "@material-ui/icons/Favorite";
-
 import ThumbUp from "@material-ui/icons/ThumbUp";
-
-import Star from "@material-ui/icons/Star";
 
 // core components
 import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
@@ -51,10 +47,16 @@ import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePag
 const useStyles = makeStyles(profilePageStyle);
 
 export default function ProfilePage({ ...rest }) {
+
+  const [profileLikeColor, setProfileLikeColor] = useState('github');
+
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
   });
+
+
   const classes = useStyles();
   const imageClasses = classNames(
     classes.imgRaised,
@@ -62,6 +64,21 @@ export default function ProfilePage({ ...rest }) {
     classes.imgFluid
   );
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
+
+  function handleProfileLike(color) {
+
+    if(color.profileLikeColor == 'github')
+    {
+      setProfileLikeColor('info');
+    }
+    else
+    {
+      setProfileLikeColor('github');
+    }
+    
+  }
+
+
   return (
     <div>
       <Header
@@ -71,7 +88,7 @@ export default function ProfilePage({ ...rest }) {
         fixed
         changeColorOnScroll={{
           height: 200,
-          color: "primary"
+          color: "info"
         }}
         {...rest}
       />
@@ -152,7 +169,8 @@ export default function ProfilePage({ ...rest }) {
                   <Button
                     justIcon
                     round
-                    color="github"
+                    color={profileLikeColor}
+                    onClick={() => handleProfileLike({profileLikeColor})} 
                     className={classes.followButton}
                   >
                     <ThumbUp className={classes.icon} />
@@ -170,7 +188,7 @@ export default function ProfilePage({ ...rest }) {
           <div className={classes.profileTabs}>
             <NavPills
               alignCenter
-              color="primary"
+              color="info"
               tabs={[
                 {
                   tabButton: "Videos",
@@ -199,7 +217,7 @@ export default function ProfilePage({ ...rest }) {
                                 >
                                   Electronics
                                 </Badge>
-                                <a href="#pablo">
+                                <a href="#/video-page">
                                   <h2 className={classes.cardTitleWhite}>
                                     Arcade 1Up Full Review Street Fighter Edition - Is it Worth $300?
                                   </h2>
@@ -218,7 +236,7 @@ export default function ProfilePage({ ...rest }) {
                                 <Badge color="warning" className={classes.badge}>
                                   Electronics
                                 </Badge>
-                                <a href="#pablo">
+                                <a href="#/video-page">
                                   <h2 className={classes.cardTitleWhite}>
                                     Arcade1Up Rampage Arcade Cabinet Review
                                   </h2>
@@ -237,7 +255,7 @@ export default function ProfilePage({ ...rest }) {
                                 <Badge color="primary" className={classes.badge}>
                                   Footwear
                                 </Badge>
-                                <a href="#pablo">
+                                <a href="#/video-page">
                                   <h2 className={classes.cardTitleWhite}>
                                     Nike Downshifter
                                   </h2>
@@ -259,7 +277,7 @@ export default function ProfilePage({ ...rest }) {
                                 >
                                   Toys
                                 </Badge>
-                                <a href="#pablo">
+                                <a href="#/video-page">
                                   <h2 className={classes.cardTitleWhite}>
                                     Endgame Power Gauntlet
                                   </h2>
@@ -512,7 +530,6 @@ export default function ProfilePage({ ...rest }) {
           <Clearfix />
         </div>
       </div>
-      <Footer/>
     </div>
   );
 }

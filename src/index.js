@@ -1,66 +1,29 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.8.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import ReactDOM from "react-dom";
-import { createBrowserHistory } from "history";
-import { HashRouter, Router, Route, Switch } from "react-router-dom";
-
+//import { createBrowserHistory } from "history";
+import { HashRouter,Route, Switch } from "react-router-dom";
 
 import "assets/scss/material-kit-pro-react.scss?v=1.8.0";
 
 // pages for this product
-import AboutUsPage from "views/AboutUsPage/AboutUsPage.js";
-import BlogPostPage from "views/BlogPostPage/BlogPostPage.js";
-import BlogPostsPage from "views/BlogPostsPage/BlogPostsPage.js";
-import ComponentsPage from "views/ComponentsPage/ComponentsPage.js";
-import ContactUsPage from "views/ContactUsPage/ContactUsPage.js";
-import EcommercePage from "views/EcommercePage/EcommercePage.js";
-import LandingPage from "views/LandingPage/LandingPage.js";
-import LoginPage from "views/LoginPage/LoginPage.js";
-import PresentationPage from "views/PresentationPage/PresentationPage.js";
-import PricingPage from "views/PricingPage/PricingPage.js";
 import ProfilePage from "views/ProfilePage/ProfilePage.js";
+import VideoPage from "views/VideoPage/VideoPage.js";
 import ProductPage from "views/ProductPage/ProductPage.js";
-import SectionsPage from "views/SectionsPage/SectionsPage.js";
-import ShoppingCartPage from "views/ShoppingCartPage/ShoppingCartPage.js";
+import LoginPage from "views/LoginPage/LoginPage.js";
 import SignupPage from "views/SignupPage/SignupPage.js";
 import ErrorPage from "views/ErrorPage/ErrorPage.js";
-
-var hist = createBrowserHistory();
+import LandingPage from "views/LandingPage/LandingPage.js";
 
 ReactDOM.render(
   <HashRouter basename='/'>
     <Switch>
-      <Route path="/about-us" component={AboutUsPage} />
-      <Route path="/blog-post" component={BlogPostPage} />
-      <Route path="/blog-posts" component={BlogPostsPage} />
-      <Route path="/components" component={ComponentsPage} />
-      <Route path="/contact-us" component={ContactUsPage} />
-      <Route path="/ecommerce-page" component={EcommercePage} />
-      <Route path="/landing-page" component={LandingPage} />
-      <Route path="/login-page" component={LoginPage} />
-      <Route path="/pricing" component={PricingPage} />
-      <Route path="/profile/:id" component={ProfilePage} />
-      <Route path="/product-page" component={ProductPage} />
-      <Route path="/sections" component={SectionsPage} />
-      <Route path="/shopping-cart-page" component={ShoppingCartPage} />
-      <Route path="/signup-page" component={SignupPage} />
-      <Route path="/error-page" component={ErrorPage} />
-      <Route path="/" component={PresentationPage} />
+      <Route exact path="/profile/:id" component={ProfilePage} />
+      <Route exact path="/video-page" component={VideoPage} />
+      <Route exact path="/product-page" component={ProductPage} />
+      <Route exact path="/login" component={LoginPage} />
+      <Route exact path="/signup" component={SignupPage} />
+      <Route exact path="/error-page" component={ErrorPage} />
+      <Route exact path="/" component={LandingPage} />
     </Switch>
   </HashRouter>,
   document.getElementById("root")
