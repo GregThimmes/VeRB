@@ -13,6 +13,7 @@ import LoginPage from "views/LoginPage/LoginPage.js";
 import SignupPage from "views/SignupPage/SignupPage.js";
 import ErrorPage from "views/ErrorPage/ErrorPage.js";
 import LandingPage from "views/LandingPage/LandingPage.js";
+import MatchesPage from "views/MatchesPage/MatchesPage.js";
 
 ReactDOM.render(
   <HashRouter basename='/'>
@@ -20,6 +21,7 @@ ReactDOM.render(
       <Route exact path="/profile/:id" component={ProfilePage} />
       <Route exact path="/video-page" component={VideoPage} />
       <Route exact path="/product-page" component={ProductPage} />
+      <Route exact path="/matches" component={MatchesPage} />
       <Route exact path="/login" component={LoginPage} />
       <Route exact path="/signup" component={SignupPage} />
       <Route exact path="/error-page" component={ErrorPage} />

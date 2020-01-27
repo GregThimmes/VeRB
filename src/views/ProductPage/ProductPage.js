@@ -1,5 +1,8 @@
 /*eslint-disable*/
 import React from "react";
+
+import { HashRouter,Route, Switch } from "react-router-dom";
+
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react component used to create nice image meadia player
@@ -16,12 +19,27 @@ import ShoppingCart from "@material-ui/icons/ShoppingCart";
 import LocalShipping from "@material-ui/icons/LocalShipping";
 import VerifiedUser from "@material-ui/icons/VerifiedUser";
 import Favorite from "@material-ui/icons/Favorite";
+
+import Comments from "@material-ui/icons/Comment";
+import Store from "@material-ui/icons/Store";
+import Reviews from "@material-ui/icons/RateReview";
+import Palette from "@material-ui/icons/Palette";
+import People from "@material-ui/icons/People";
+import Add from "@material-ui/icons/Add";
+import ThumbUp from "@material-ui/icons/ThumbUp";
+import Donate from "@material-ui/icons/Money";
+import Message from "@material-ui/icons/Message";
+
+
+
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
+import NavPills from "components/NavPills/NavPills.js";
+
 import Footer from "components/Footer/Footer.js";
 import Button from "components/CustomButtons/Button.js";
 import Accordion from "components/Accordion/Accordion.js";
@@ -31,6 +49,12 @@ import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
 import Tooltip from "@material-ui/core/Tooltip";
+import Badge from "components/Badge/Badge.js";
+
+import CustomTabs from "components/CustomTabs/CustomTabs.js";
+import Movie from "@material-ui/icons/Movie";
+import Photo from "@material-ui/icons/Photo";
+
 
 import productStyle from "assets/jss/material-kit-pro-react/views/productStyle.js";
 
@@ -43,6 +67,10 @@ import product1 from "assets/img/examples/product1.jpg";
 import product2 from "assets/img/examples/product2.jpg";
 import product3 from "assets/img/examples/product3.jpg";
 import product4 from "assets/img/examples/product4.jpg";
+
+import CommentsPage from "views/CommentsPage/CommentsPage.js";
+
+
 
 const useStyles = makeStyles(productStyle);
 
@@ -81,7 +109,7 @@ export default function ProductPage() {
         }}
       />
       <Parallax
-        image={require("assets/img/bg6.jpg")}
+        image={require("assets/img/bg7.jpg")}
         filter="info"
         className={classes.pageHeader}
       >
@@ -92,14 +120,37 @@ export default function ProductPage() {
           <div className={classNames(classes.main, classes.mainRaised)}>
             <GridContainer>
               <GridItem md={6} sm={6}>
+                <CustomTabs
+                headerColor="info"
+        tabs={[
+          {
+            tabName: "Video Review",
+            tabIcon: Movie,
+            tabContent: (
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/1erCpiXXET0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            )
+          },
+          {
+            tabName: "Product Photos",
+            tabIcon: Photo,
+            tabContent: (
+              
                 <ImageGallery
                   showFullscreenButton={false}
                   showPlayButton={false}
                   startIndex={3}
                   items={images}
                 />
+            )
+          }
+        ]}
+      />
+
               </GridItem>
               <GridItem md={6} sm={6}>
+              
+                <h4><a href="/VeRB/#/profile/2">MyBalmain</a> <i className="material-icons md-48 orange600">star</i><i className="material-icons md-48 orange600">star</i><i className="material-icons md-48 orange600">star</i> (107)</h4>
+               
                 <h2 className={classes.title}>Becky Silk Blazer</h2>
                 <h3 className={classes.mainPrice}>$335</h3>
                 <Accordion
@@ -260,41 +311,33 @@ export default function ProductPage() {
               </GridItem>
             </GridContainer>
           </div>
-          <div className={classNames(classes.features, classes.textCenter)}>
-            <GridContainer>
-              <GridItem md={4} sm={4}>
-                <InfoArea
-                  title="2 Days Delivery"
-                  description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                  icon={LocalShipping}
-                  iconColor="info"
-                  vertical
-                />
-              </GridItem>
-              <GridItem md={4} sm={4}>
-                <InfoArea
-                  title="Refundable Policy"
-                  description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                  icon={VerifiedUser}
-                  iconColor="success"
-                  vertical
-                />
-              </GridItem>
-              <GridItem md={4} sm={4}>
-                <InfoArea
-                  title="Popular Item"
-                  description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                  icon={Favorite}
-                  iconColor="info"
-                  vertical
-                />
-              </GridItem>
-            </GridContainer>
-          </div>
-          <div className={classes.relatedProducts}>
-            <h3 className={classNames(classes.title, classes.textCenter)}>
-              You may also be interested in:
-            </h3>
+          
+          <div className={classes.profileTabs}>
+
+            <NavPills
+              alignCenter
+              color="info"
+              tabs={[
+                {
+                  tabButton: "Comments",
+                  tabIcon: Comments,
+                  tabContent: (
+                    <CommentsPage />
+                  )
+                },
+                {
+                  tabButton: "Reviews",
+                  tabIcon: Reviews,
+                  tabContent: (
+                    <div></div>
+                  )
+                },
+                {
+                  tabButton: "More From Seller",
+                  tabIcon: Store,
+                  tabContent: (
+                    <div className={classes.relatedProducts}>
+          
             <GridContainer>
               <GridItem sm={6} md={3}>
                 <Card product>
@@ -450,63 +493,13 @@ export default function ProductPage() {
               </GridItem>
             </GridContainer>
           </div>
+                  )
+                }
+              ]}
+            />
+            </div>
         </div>
       </div>
-      <Footer
-        // theme="dark"
-        content={
-          <div>
-            <div className={classes.left}>
-              <List className={classes.list}>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/?ref=mkpr-pricing"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Creative Tim
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-pricing"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    About us
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a href="//blog.creative-tim.com/" className={classes.block}>
-                    Blog
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-pricing"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Licenses
-                  </a>
-                </ListItem>
-              </List>
-            </div>
-            <div className={classes.right}>
-              &copy; {1900 + new Date().getYear()} , made with{" "}
-              <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.creative-tim.com?ref=mkpr-pricing"
-                target="_blank"
-                className={classes.aClasses}
-              >
-                Creative Tim
-              </a>{" "}
-              for a better web.
-            </div>
-          </div>
-        }
-      />
     </div>
   );
 }

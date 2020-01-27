@@ -91,6 +91,10 @@ export default function HeaderLinks(props) {
   var onClickSections = {};
 
   const { dropdownHoverColor } = props;
+
+  const [activeNav, setActiveNav] = React.useState("home");
+
+
   const classes = useStyles();
   return (
     <div className={classes.collapse}>
@@ -99,12 +103,12 @@ export default function HeaderLinks(props) {
                     <Button
                       href="#pablo"
                       className={
-                        classes.navLink + " " + classes.navLinkActive
+                        classes.navLink 
                       }
                       onClick={e => e.preventDefault()}
                       color="transparent"
                     >
-                      Link
+                      Auto
                     </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
@@ -114,7 +118,47 @@ export default function HeaderLinks(props) {
                       onClick={e => e.preventDefault()}
                       color="transparent"
                     >
-                      Link
+                      Fishing
+                    </Button>
+                  </ListItem>
+                  <ListItem className={classes.listItem}>
+                    <Button
+                      href="#pablo"
+                      className={classes.navLink}
+                      onClick={e => e.preventDefault()}
+                      color="transparent"
+                    >
+                      Flowers
+                    </Button>
+                  </ListItem>
+                  <ListItem className={classes.listItem}>
+                    <Button
+                      href="#pablo"
+                      className={classes.navLink}
+                      onClick={e => e.preventDefault()}
+                      color="transparent"
+                    >
+                      Health
+                    </Button>
+                  </ListItem>
+                  <ListItem className={classes.listItem}>
+                    <Button
+                      href="#pablo"
+                      className={classes.navLink}
+                      onClick={e => e.preventDefault()}
+                      color="transparent"
+                    >
+                      Jewelery
+                    </Button>
+                  </ListItem>
+                  <ListItem className={classes.listItem}>
+                    <Button
+                      href="#pablo"
+                      className={classes.navLink}
+                      onClick={e => e.preventDefault()}
+                      color="transparent"
+                    >
+                      Sports
                     </Button>
                   </ListItem>
                 </List>
@@ -138,13 +182,20 @@ export default function HeaderLinks(props) {
                   </Button>
                 </div>
                 <ListItem className={classes.listItem}>
-                  <Button
-                    href="/VeRB/#/profile/2"
-                    className={classes.navLink}
-                    color="transparent"
-                  >
-                    <AccountCircle /> My Profile
-                  </Button>
+                  <CustomDropdown
+                    noLiPadding
+                    navDropdown
+                    hoverColor={dropdownHoverColor}
+                    buttonText="Profile Actions"
+                    buttonProps={{
+                      className: classes.navLink,
+                      color: "transparent"
+                    }}
+                      dropdownList={[
+                        <Link to="/profile/2" className={classes.dropdownLink}>My Profile</Link>,
+                        <Link to="/matches" className={classes.dropdownLink}>Audience Connect</Link>,
+                      ]}
+                      />
                 </ListItem>
                 <ListItem className={classes.listItem}>
                 <Button color="white" className={classes.floatRight}>
